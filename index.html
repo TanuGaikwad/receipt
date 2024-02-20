@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Receipt</title>
+    <style>
+        body {
+            background-color: #eeeee4;
+        }
+        .receipt-container {
+            width: 80%;
+            border: 1px solid gray;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .receipt-header {
+            border-bottom: 1px dashed gray;
+        }
+
+        .brand-logo {
+            width: 100px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .brand-title {
+            text-align: center;
+        }
+
+        .brand-address {
+            text-align: right;
+        }
+
+        .brand-mobile {
+            text-align: right;
+        }
+
+        .receipt-title {
+            text-align: center;
+            font-size: 30px;
+            margin: 40px 0;
+        }
+
+        .receipt-body {
+            position: relative;
+            border-bottom: 1px dashed gray;
+        }
+
+        .receipt-detail {
+            display: flex;
+            justify-content: center;
+            font-size: 20px;
+            margin: 20px 0;
+        }
+
+        .receipt-detail-key {
+            color: gray;
+            width: 30%
+        }
+
+        .receipt-detail-value {
+            font-weight: bold;
+            border-bottom: 1px dashed gray;
+            width: 30%;
+        }
+
+        .Principle-signature {
+            text-align: right;
+            margin-top: 100px;
+        }
+
+        .stamp {
+            width: 150px;
+            right: 2%;
+            bottom: 0%;
+            position: absolute;
+            bottom: 83px;
+            transform: rotate(-23deg);
+        }
+
+        .receipt-footer {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 20px;
+            background-color: tomato;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="receipt-container">
+        <div class="receipt-header">
+            <img src="./logo.png" class="brand-logo" />
+            <h2 class="brand-title">JSPM's</h2>
+            <p class="brand-address">
+               JSPM's College Wagholi,<br />
+               Haveli, <br />
+                Pune-412307.
+            </p>
+            <p class="brand-mobile">
+                +91-8010092807
+            </p>
+        </div>
+
+        <div class="receipt-body">
+            <h3 class="receipt-title"> Addmission Receipt </h3>
+
+            <div class="receipt-detail">
+                <div class="receipt-detail-key">
+                    Receipt No :
+                </div>
+                <div class="receipt-detail-value">
+                    123456789
+                </div>
+            </div>
+
+            <div class="receipt-detail">
+                <div class="receipt-detail-key">
+                    Student Name :
+                </div>
+                <div class="receipt-detail-value">
+                    Gaikwad Tanvi Bapu
+                </div>
+            </div>
+
+            <div class="receipt-detail">
+                <div class="receipt-detail-key">
+                    Email id :
+                </div>
+                <div class="receipt-detail-value">
+                    tanvigaikwad920@gmail.com
+                </div>
+            </div>
+
+            <div class="receipt-detail">
+                <div class="receipt-detail-key">
+                    Institute name :
+                </div>
+                <div class="receipt-detail-value">
+                    JSPMs Bhivrabai Sawant Polytechnic College Wagholi,Pune 412207
+                </div>
+            </div>
+
+            <div class="receipt-detail">
+                <div class="receipt-detail-key">
+                    Addmission Fee :
+                </div>
+                <div class="receipt-detail-value">
+                    29840/-
+                </div>
+            </div>
+
+            <div class="receipt-detail">
+                <div class="receipt-detail-key">
+                    Addmission Date :
+                </div>
+                <div class="receipt-detail-value">
+                     21 september 2021
+                </div>
+            </div>
+
+            <img src="./stamp.png" class="stamp" />
+
+            <p class="Principle-signature">
+                Principle Signature
+                <br /><br /><br />
+            </p>
+        </div>
+
+        <p>
+            This is a computer generated receipt and does not require any signature.
+        </p>
+        <div class="receipt-footer">
+            Thank you for your addmission.
+        </div>
+    </div>
+</body>
+</html>
